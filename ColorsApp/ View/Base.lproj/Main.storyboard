@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L4q-4X-oLY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Colors List View Controller-->
+        <scene sceneID="C5s-MC-ebM">
+            <objects>
+                <viewController id="284-0g-vuK" customClass="ColorsListViewController" customModule="ColorsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcU-Yc-Tao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mv3-YO-9Yd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xCA-9Q-vRm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cb2-rE-xdj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8115942028987" y="416.51785714285711"/>
+        </scene>
+        <!--Generator-->
+        <scene sceneID="kaU-VV-a9x">
+            <objects>
+                <viewController id="Bhe-XW-Ofc" customClass="ColorViewController" customModule="ColorsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kVt-t1-IVF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-OW-1Nz">
+                                <rect key="frame" x="25" y="69" width="364" height="719"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-SP-Msu" customClass="ColorContainer" customModule="ColorsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="582"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-I0-BUy">
+                                        <rect key="frame" x="0.0" y="607" width="364" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7Uz-LW-4vH">
+                                        <rect key="frame" x="0.0" y="675" width="364" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ren-1L-ZTz">
+                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Generuj">
+                                                    <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="2">
+                                                        <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="generateColor:" destination="Bhe-XW-Ofc" eventType="touchUpInside" id="SKK-jv-o3Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-Bu-5II">
+                                                <rect key="frame" x="194.5" y="0.0" width="169.5" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Zapisz">
+                                                    <backgroundConfiguration key="background" cornerRadius="10" strokeWidth="2">
+                                                        <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="saveColor:" destination="Bhe-XW-Ofc" eventType="touchUpInside" id="vdV-Hb-dAc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="qlA-Xz-nJy"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LQ6-TT-OuK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LQ6-TT-OuK" firstAttribute="trailing" secondItem="ThK-OW-1Nz" secondAttribute="trailing" constant="25" id="0vR-EM-I8X"/>
+                            <constraint firstItem="ThK-OW-1Nz" firstAttribute="leading" secondItem="LQ6-TT-OuK" secondAttribute="leading" constant="25" id="3cP-jK-IZJ"/>
+                            <constraint firstItem="ThK-OW-1Nz" firstAttribute="top" secondItem="LQ6-TT-OuK" secondAttribute="top" constant="25" id="5Pp-C6-ACA"/>
+                            <constraint firstItem="LQ6-TT-OuK" firstAttribute="bottom" secondItem="ThK-OW-1Nz" secondAttribute="bottom" constant="25" id="Bod-pm-JU0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Generator" image="icoGenerator" id="Dx2-UX-Ura"/>
+                    <connections>
+                        <outlet property="colorContainer" destination="nLb-SP-Msu" id="WP5-Q0-jtQ"/>
+                        <outlet property="textLabel" destination="mJL-I0-BUy" id="Dxk-C8-aUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wt-VZ-DVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="-250"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Of1-Nb-XVd">
+            <objects>
+                <tabBarController id="L4q-4X-oLY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xJt-8c-e5l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bhe-XW-Ofc" kind="relationship" relationship="viewControllers" id="YDg-HG-QTX"/>
+                        <segue destination="ii7-Qc-EH7" kind="relationship" relationship="viewControllers" id="Azt-Dt-WGd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxG-7h-jw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="95"/>
+        </scene>
+        <!--Ulubione-->
+        <scene sceneID="LGg-2Y-RRI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ii7-Qc-EH7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ulubione" image="icoFavorite" id="9UR-VA-WmQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wAJ-DF-n5P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="284-0g-vuK" kind="relationship" relationship="rootViewController" id="R62-gm-Osz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHI-QJ-NHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466.66666666666669" y="416.51785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icoFavorite" width="30" height="30"/>
+        <image name="icoGenerator" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
