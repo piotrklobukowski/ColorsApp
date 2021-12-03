@@ -15,10 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="pcU-Yc-Tao">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jfl-f9-gYx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Mv3-YO-9Yd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mv3-YO-9Yd" firstAttribute="trailing" secondItem="jfl-f9-gYx" secondAttribute="trailing" id="8ZL-cE-Ugy"/>
+                            <constraint firstItem="Mv3-YO-9Yd" firstAttribute="bottom" secondItem="jfl-f9-gYx" secondAttribute="bottom" id="GoY-aR-Qt5"/>
+                            <constraint firstItem="jfl-f9-gYx" firstAttribute="top" secondItem="Mv3-YO-9Yd" secondAttribute="top" id="PHa-2j-4N3"/>
+                            <constraint firstItem="jfl-f9-gYx" firstAttribute="leading" secondItem="Mv3-YO-9Yd" secondAttribute="leading" id="lfT-kY-ZuA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xCA-9Q-vRm"/>
+                    <connections>
+                        <outlet property="tableView" destination="jfl-f9-gYx" id="KRN-yO-stu"/>
+                        <segue destination="Bhe-XW-Ofc" kind="show" identifier="showFavouriteColor" id="vfC-jq-LDA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cb2-rE-xdj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,10 +49,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-OW-1Nz">
-                                <rect key="frame" x="25" y="69" width="364" height="719"/>
+                                <rect key="frame" x="25" y="113" width="364" height="675"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-SP-Msu" customClass="ColorContainer" customModule="ColorsApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="582"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="581"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -44,14 +60,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-I0-BUy">
-                                        <rect key="frame" x="0.0" y="607" width="364" height="43"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brak koloru" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-I0-BUy" customClass="ColorInfosLabel" customModule="ColorsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="606" width="364" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7Uz-LW-4vH">
-                                        <rect key="frame" x="0.0" y="675" width="364" height="44"/>
+                                        <rect key="frame" x="0.0" y="631" width="364" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ren-1L-ZTz">
                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="44"/>
@@ -63,7 +79,7 @@
                                                     <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="generateColor:" destination="Bhe-XW-Ofc" eventType="touchUpInside" id="SKK-jv-o3Y"/>
+                                                    <action selector="generateButtonPressed:" destination="Bhe-XW-Ofc" eventType="touchUpInside" id="ufP-1J-NMN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-Bu-5II">
@@ -76,7 +92,7 @@
                                                     <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="saveColor:" destination="Bhe-XW-Ofc" eventType="touchUpInside" id="vdV-Hb-dAc"/>
+                                                    <action selector="SaveButtonPressed:" destination="Bhe-XW-Ofc" eventType="touchUpInside" id="DYo-y8-bCf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -97,7 +113,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Generator" image="icoGenerator" id="Dx2-UX-Ura"/>
+                    <navigationItem key="navigationItem" id="1K7-Af-f5g"/>
                     <connections>
+                        <outlet property="buttonsStackView" destination="7Uz-LW-4vH" id="n08-4w-I4w"/>
                         <outlet property="colorContainer" destination="nLb-SP-Msu" id="WP5-Q0-jtQ"/>
                         <outlet property="textLabel" destination="mJL-I0-BUy" id="Dxk-C8-aUG"/>
                     </connections>
@@ -145,6 +163,9 @@
             <point key="canvasLocation" x="466.66666666666669" y="416.51785714285711"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vfC-jq-LDA"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="icoFavorite" width="30" height="30"/>
         <image name="icoGenerator" width="30" height="30"/>

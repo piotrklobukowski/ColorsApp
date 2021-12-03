@@ -15,12 +15,19 @@
 		2340952F275185BA00958FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2340952D275185BA00958FBB /* Main.storyboard */; };
 		23409531275185BC00958FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23409530275185BC00958FBB /* Assets.xcassets */; };
 		23409534275185BC00958FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23409532275185BC00958FBB /* LaunchScreen.storyboard */; };
-		2347A0412753BB4B003AB6AB /* ColorNetworkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A0402753BB4B003AB6AB /* ColorNetworkingViewModel.swift */; };
-		2347A0452753C30F003AB6AB /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A0442753C30F003AB6AB /* ColorViewModel.swift */; };
+		2347A0412753BB4B003AB6AB /* ColorGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A0402753BB4B003AB6AB /* ColorGeneratorViewModel.swift */; };
+		2347A0452753C30F003AB6AB /* ColorViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A0442753C30F003AB6AB /* ColorViewData.swift */; };
 		2347A0472753D58C003AB6AB /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2347A0462753D58C003AB6AB /* Fraction.swift */; };
+		239817C12756A7080050CD6E /* ColorsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239817C02756A7080050CD6E /* ColorsListViewModel.swift */; };
+		239817C42756E8860050CD6E /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239817C22756E8860050CD6E /* ColorTableViewCell.swift */; };
+		239817C52756E8860050CD6E /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239817C32756E8860050CD6E /* ColorTableViewCell.xib */; };
+		23B36F8D2757DE0000D8AA2C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23B36F8B2757DE0000D8AA2C /* DataModel.xcdatamodeld */; };
+		23B502062758DE7800820A4E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B502052758DE7800820A4E /* CoreDataManager.swift */; };
+		23B502082758E3F900820A4E /* DataPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B502072758E3F900820A4E /* DataPersistenceService.swift */; };
+		23B5020C275968B100820A4E /* ColorInfosLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B5020B275968B100820A4E /* ColorInfosLabel.swift */; };
 		23D6B3C42752E10D00C827C7 /* ColorsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D6B3C32752E10D00C827C7 /* ColorsAPIService.swift */; };
 		23D6B3C62752E25800C827C7 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D6B3C52752E25800C827C7 /* ColorData.swift */; };
-		23D6B3C82752ECC300C827C7 /* Rgb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D6B3C72752ECC300C827C7 /* Rgb.swift */; };
+		23D6B3C82752ECC300C827C7 /* RgbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D6B3C72752ECC300C827C7 /* RgbData.swift */; };
 		23D6B3CA2752ECF500C827C7 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D6B3C92752ECF500C827C7 /* ColorName.swift */; };
 		23D6B3CD2752F2AC00C827C7 /* RgbRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D6B3CC2752F2AC00C827C7 /* RgbRandomizer.swift */; };
 /* End PBXBuildFile section */
@@ -36,12 +43,19 @@
 		23409530275185BC00958FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23409533275185BC00958FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23409535275185BC00958FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2347A0402753BB4B003AB6AB /* ColorNetworkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNetworkingViewModel.swift; sourceTree = "<group>"; };
-		2347A0442753C30F003AB6AB /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
+		2347A0402753BB4B003AB6AB /* ColorGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGeneratorViewModel.swift; sourceTree = "<group>"; };
+		2347A0442753C30F003AB6AB /* ColorViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewData.swift; sourceTree = "<group>"; };
 		2347A0462753D58C003AB6AB /* Fraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
+		239817C02756A7080050CD6E /* ColorsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListViewModel.swift; sourceTree = "<group>"; };
+		239817C22756E8860050CD6E /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		239817C32756E8860050CD6E /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
+		23B36F8C2757DE0000D8AA2C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		23B502052758DE7800820A4E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		23B502072758E3F900820A4E /* DataPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceService.swift; sourceTree = "<group>"; };
+		23B5020B275968B100820A4E /* ColorInfosLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInfosLabel.swift; sourceTree = "<group>"; };
 		23D6B3C32752E10D00C827C7 /* ColorsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAPIService.swift; sourceTree = "<group>"; };
 		23D6B3C52752E25800C827C7 /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
-		23D6B3C72752ECC300C827C7 /* Rgb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rgb.swift; sourceTree = "<group>"; };
+		23D6B3C72752ECC300C827C7 /* RgbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgbData.swift; sourceTree = "<group>"; };
 		23D6B3C92752ECF500C827C7 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
 		23D6B3CC2752F2AC00C827C7 /* RgbRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgbRandomizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +108,7 @@
 				23409529275185BA00958FBB /* SceneDelegate.swift */,
 				23409530275185BC00958FBB /* Assets.xcassets */,
 				23409535275185BC00958FBB /* Info.plist */,
+				23B36F8B2757DE0000D8AA2C /* DataModel.xcdatamodeld */,
 			);
 			path = ColorsApp;
 			sourceTree = "<group>";
@@ -103,6 +118,8 @@
 			children = (
 				23D6B3C32752E10D00C827C7 /* ColorsAPIService.swift */,
 				23D6B3CC2752F2AC00C827C7 /* RgbRandomizer.swift */,
+				23B502052758DE7800820A4E /* CoreDataManager.swift */,
+				23B502072758E3F900820A4E /* DataPersistenceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -110,8 +127,9 @@
 		2347A0492753DC4D003AB6AB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				2347A0402753BB4B003AB6AB /* ColorNetworkingViewModel.swift */,
-				2347A0442753C30F003AB6AB /* ColorViewModel.swift */,
+				2347A0402753BB4B003AB6AB /* ColorGeneratorViewModel.swift */,
+				2347A0442753C30F003AB6AB /* ColorViewData.swift */,
+				239817C02756A7080050CD6E /* ColorsListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -122,6 +140,9 @@
 				23409532275185BC00958FBB /* LaunchScreen.storyboard */,
 				2340952D275185BA00958FBB /* Main.storyboard */,
 				231B0F7D2752A7F400D76CAF /* ColorContainer.swift */,
+				239817C22756E8860050CD6E /* ColorTableViewCell.swift */,
+				239817C32756E8860050CD6E /* ColorTableViewCell.xib */,
+				23B5020B275968B100820A4E /* ColorInfosLabel.swift */,
 			);
 			path = " View";
 			sourceTree = "<group>";
@@ -130,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				23D6B3C52752E25800C827C7 /* ColorData.swift */,
-				23D6B3C72752ECC300C827C7 /* Rgb.swift */,
+				23D6B3C72752ECC300C827C7 /* RgbData.swift */,
 				2347A0462753D58C003AB6AB /* Fraction.swift */,
 				23D6B3C92752ECF500C827C7 /* ColorName.swift */,
 			);
@@ -196,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23409534275185BC00958FBB /* LaunchScreen.storyboard in Resources */,
+				239817C52756E8860050CD6E /* ColorTableViewCell.xib in Resources */,
 				23409531275185BC00958FBB /* Assets.xcassets in Resources */,
 				2340952F275185BA00958FBB /* Main.storyboard in Resources */,
 			);
@@ -208,19 +230,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B502062758DE7800820A4E /* CoreDataManager.swift in Sources */,
 				23D6B3C42752E10D00C827C7 /* ColorsAPIService.swift in Sources */,
 				23409528275185BA00958FBB /* AppDelegate.swift in Sources */,
 				231B0F772752726E00D76CAF /* ColorViewController.swift in Sources */,
 				2347A0472753D58C003AB6AB /* Fraction.swift in Sources */,
+				239817C12756A7080050CD6E /* ColorsListViewModel.swift in Sources */,
+				239817C42756E8860050CD6E /* ColorTableViewCell.swift in Sources */,
 				23D6B3CA2752ECF500C827C7 /* ColorName.swift in Sources */,
 				23D6B3CD2752F2AC00C827C7 /* RgbRandomizer.swift in Sources */,
 				23D6B3C62752E25800C827C7 /* ColorData.swift in Sources */,
+				23B36F8D2757DE0000D8AA2C /* DataModel.xcdatamodeld in Sources */,
+				23B502082758E3F900820A4E /* DataPersistenceService.swift in Sources */,
 				2340952A275185BA00958FBB /* SceneDelegate.swift in Sources */,
 				231B0F7E2752A7F400D76CAF /* ColorContainer.swift in Sources */,
-				2347A0452753C30F003AB6AB /* ColorViewModel.swift in Sources */,
+				2347A0452753C30F003AB6AB /* ColorViewData.swift in Sources */,
 				231B0F792752728800D76CAF /* ColorsListViewController.swift in Sources */,
-				2347A0412753BB4B003AB6AB /* ColorNetworkingViewModel.swift in Sources */,
-				23D6B3C82752ECC300C827C7 /* Rgb.swift in Sources */,
+				2347A0412753BB4B003AB6AB /* ColorGeneratorViewModel.swift in Sources */,
+				23D6B3C82752ECC300C827C7 /* RgbData.swift in Sources */,
+				23B5020C275968B100820A4E /* ColorInfosLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23B36F8B2757DE0000D8AA2C /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23B36F8C2757DE0000D8AA2C /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 23B36F8C2757DE0000D8AA2C /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2340951C275185BA00958FBB /* Project object */;
 }

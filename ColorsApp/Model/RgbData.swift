@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Rgb: Decodable {
+struct RgbData: Decodable {
     let fraction: Fraction
 }

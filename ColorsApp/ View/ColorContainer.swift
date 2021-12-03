@@ -9,7 +9,13 @@ import UIKit
 
 @IBDesignable
 class ColorContainer: UIView {
-        
+    
+    var color: UIColor = .black {
+        didSet {
+            colorTransition(toNewColor: color)
+        }
+    }
+    
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -17,6 +23,14 @@ class ColorContainer: UIView {
         }
         set {
             layer.cornerRadius = newValue
+        }
+    }
+    
+    var animationDuration: TimeInterval = 0.0
+    
+    private func colorTransition(toNewColor newColor: UIColor) {
+        UIView.animate(withDuration: animationDuration) {
+            self.backgroundColor = newColor
         }
     }
 

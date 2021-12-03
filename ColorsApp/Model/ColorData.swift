@@ -8,7 +8,7 @@
 import Foundation
 
 struct ColorData: Decodable {
-    let rgb: Rgb
+    let rgb: RgbData
     let nameInfos: ColorName
     
     enum CodingKeys: String, CodingKey {
