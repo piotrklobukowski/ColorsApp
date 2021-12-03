@@ -30,7 +30,6 @@ class DataPersistenceProvider: DataPersistenceProviding {
         color.closestHexName = data.nameInfos.closestNamedHex
         color.id = UUID()
         color.rgb = rgb
-        
         manager.saveContext()
     }
     
@@ -41,6 +40,9 @@ class DataPersistenceProvider: DataPersistenceProviding {
     }
     
     func delete(data: Color) {
+        if let rgbToDelete = data.rgb {
+            context.delete(rgbToDelete)
+        }
         context.delete(data)
         manager.saveContext()
     }
